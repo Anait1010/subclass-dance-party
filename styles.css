@@ -2,14 +2,18 @@ body, html{
   height:100%;
 }
 body{
+  background-image: url(https://media.wired.com/photos/5926a939cefba457b079abde/master/w_1164,c_limit/android_imessage.jpg);
   margin: 0px;
-  background-color:#444;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
 .title, .addDancerButton{
+  padding:5px 12px;
+  float:right;
+}
+.title, .lineUpButton{
   padding:5px 12px;
   float:right;
 }
@@ -21,6 +25,22 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
+  border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+}
+
+.mindBlownDancer{
+  background-image: url("src/mindblown.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border:5px solid green;
+  border-radius:1px;
+  position:absolute;
+}
+
+.heartEyesDancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
