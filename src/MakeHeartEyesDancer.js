@@ -1,5 +1,7 @@
 var MakeHeartEyesDancer = function(top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<span class="heartEyesDancer"></span>');
+  this.setPosition(top, left);
 };
 
 MakeHeartEyesDancer.prototype = Object.create(MakeDancer.prototype); 

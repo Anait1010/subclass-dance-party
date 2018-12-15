@@ -23,28 +23,28 @@ $(document).ready(function() {
     // make a dancer with a random position
     //do we have to add new before dancerMakerFunction?
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
+      $('body').height() * Math.random(),
+      $('body').width() * Math.random(),
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
   });
 
-//added lineup button click action
+  //added lineup button click action
   $('.lineUpButton').on('click', function() {
-    var top = 400;
+    var top = 50;
     var left = 0;
     for (var i  = 0; i < window.dancers.length; i++) {
       //use call or bind? maybe call?
       window.dancers[i].setPosition(top, left);
-      left += 50;
+      left += 80;
     }
   });
   $('.interactButton').on('click', function() {
     var random1 = Math.floor(Math.random() * (window.dancers.length - 1)) + 1;
     var random2 = Math.floor(Math.random() * (window.dancers.length - 1)) + 1;
-    window.dancers[random1].setPosition(350,550);
-    window.dancers[random2].setPosition(350,600);
+    window.dancers[random1].setPosition(305,550);
+    window.dancers[random2].setPosition(305,620);
   });
 });
