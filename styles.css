@@ -55,12 +55,12 @@ body, a:link, a:visited, a:active{
 .heartEyesDancer{
   background-image: url("src/hearteyes.png");
   background-size: 80px;
-  width: 65px;
-  height: 65px;
+  width: 70px;
+  height: 80px;
   background-repeat: no-repeat;
   background-position: right 60% bottom 55%;
-  border:2px solid red;
-  border-radius:100px;
+  /* border:2px solid red; */
+  /* border-radius:100px; */
   position:absolute;
 }
 
