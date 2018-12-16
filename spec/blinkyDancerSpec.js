@@ -19,6 +19,15 @@ describe('blinkyDancer', function() {
     expect(blinkyDancer.$node.toggle.called).to.be.true;
   });
 
+  it('should be a prototype of MakeDancer', function() {
+    expect(MakeBlinkyDancer).to.be.isPrototypeOf(MakeDancer);
+  });
+ 
+
+  it('should have a constructor property that correctly references the constructor function that created the instance object', function() {
+    expect(blinkyDancer.constructor).to.be.equal(MakeBlinkyDancer);
+  });
+
   describe('dance', function() {
     it('should call step at least once per second', function() {
       sinon.spy(blinkyDancer, 'step');

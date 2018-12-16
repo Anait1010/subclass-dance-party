@@ -9,5 +9,6 @@ MakeHeartEyesDancer.prototype.constructor = MakeHeartEyesDancer;
 
 MakeHeartEyesDancer.prototype.step = function() {
   MakeDancer.prototype.step.call(this);
-  this.$node.fadeTo('slow', 1);
+  this.$node.animate({ width: "50%" }, 7000 );
+  this.$node.animate({ width: "-50%" }, 7000 );
 };

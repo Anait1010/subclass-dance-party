@@ -13,10 +13,10 @@ describe('heartEyesDancer', function() {
     expect(heartEyesDancer.$node).to.be.an.instanceof(jQuery);
   });
 
-  it('should have a step function that makes its node blink', function() {
-    sinon.spy(heartEyesDancer.$node, 'fadeTo');
+  it('should have a step function that makes its node move back and forth', function() {
+    sinon.spy(heartEyesDancer.$node, 'animate');
     heartEyesDancer.step();
-    expect(heartEyesDancer.$node.fadeTo.called).to.be.true;
+    expect(heartEyesDancer.$node.animate.called).to.be.true;
   });
 
   describe('dance', function() {
